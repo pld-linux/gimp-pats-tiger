@@ -1,5 +1,5 @@
 Summary:	The GNU Image Manipulation Program
-Summary(pl):	GNU Gimp program do tworzenia i obróki grafiki 
+Summary(pl):	GNU Gimp program do tworzenia i obróki grafiki
 Name:		gimp-pats-tiger
 Version:	1.0
 Release:	4
@@ -51,7 +51,7 @@ gzip -9nf pats-tigert-pov.README
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files 
+%files
 %defattr(644,root,root,755)
 %doc *gz
 %{_gimpdatadir}/patterns/*
