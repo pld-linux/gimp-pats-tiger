@@ -11,7 +11,7 @@ Source:		ftp://ftp.gimp.org/pub/gimp/contrib/pats-tigert-pov-granites.tar.gz
 Source1:	ftp://ftp.gimp.org/pub/gimp/contrib/pats-tigert-pov-stones.tar.gz
 Source2:	ftp://ftp.gimp.org/pub/gimp/contrib/pats-tigert-pov.README
 Requires:	gimp
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Buildarch:	noarch
 
 %description
