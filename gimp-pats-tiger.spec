@@ -36,6 +36,7 @@ install -d $RPM_BUILD_ROOT%{_datadir}/gimp/patterns
 install *pat $RPM_BUILD_ROOT%{_datadir}/gimp/patterns
 
 gzip -9nf pats-tigert-pov.README
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
