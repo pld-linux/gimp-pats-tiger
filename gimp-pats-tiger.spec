@@ -32,8 +32,8 @@ install %{SOURCE2} .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/share/gimp/patterns
-install *pat $RPM_BUILD_ROOT/usr/share/gimp/patterns
+install -d $RPM_BUILD_ROOT%{_datadir}/gimp/patterns
+install *pat $RPM_BUILD_ROOT%{_datadir}/gimp/patterns
 
 gzip -9nf pats-tigert-pov.README
 %clean
@@ -42,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 %files 
 %defattr(644,root,root)
 %doc *gz
-/usr/share/gimp/patterns/*
+%{_datadir}/gimp/patterns/*
 
 %changelog
 * Thu Mar 25 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
