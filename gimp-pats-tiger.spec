@@ -42,7 +42,7 @@ install %{SOURCE2} .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__install} -d $RPM_BUILD_ROOT%{_gimpdatadir}/patterns
+install -d $RPM_BUILD_ROOT%{_gimpdatadir}/patterns
 
 install *pat $RPM_BUILD_ROOT%{_gimpdatadir}/patterns
 
