@@ -5,7 +5,7 @@ Version:	1.0
 Release:	3
 Copyright:	GPL
 Group:		X11/Applications/Graphics
-Group:		X11/Aplikacje/Grafika
+Group(pl):	X11/Aplikacje/Grafika
 Vendor:		Tuomas Kuosmanen <tigert@nettilinja.fi>
 Source:		ftp://ftp.gimp.org/pub/gimp/contrib/pats-tigert-pov-granites.tar.gz
 Source1:	ftp://ftp.gimp.org/pub/gimp/contrib/pats-tigert-pov-stones.tar.gz
