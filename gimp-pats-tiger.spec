@@ -17,7 +17,7 @@ Requires:	gimp >= 1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Buildarch:	noarch
 
-%define		_gimpdatadir	%(gimp-config --gimpdatadir)
+%define		_gimpdatadir	%(gimptool --gimpdatadir)
 
 %description
 Gimp patterns converted from the raytracing program Persistence of
