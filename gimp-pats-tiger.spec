@@ -44,14 +44,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root)
 %doc *gz
 %{_datadir}/gimp/patterns/*
-
-%changelog
-* Thu Mar 25 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [1.0-2]
-- added Group(pl),
-- added gzipping %doc.
-
-* Fri May  1 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-- first release in rpm package,
-- spec contain %%{SOURCE2} and %defattr macros (this require using on
-  rebuild rpm >= 2.4.99.
