@@ -14,8 +14,8 @@ Source2:	ftp://ftp.gimp.org/pub/gimp/contrib/pats-tigert-pov.README
 # Source2-md5:	f7fb7d743a8ba221412feede8c50b5f1
 BuildRequires:	gimp-devel >= 1.2
 Requires:	gimp >= 1.2
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Buildarch:	noarch
 
 %define		_gimpdatadir	%(gimptool --gimpdatadir)
 
