@@ -7,8 +7,11 @@ License:	GPL
 Group:		X11/Applications/Graphics
 Vendor:		Tuomas Kuosmanen <tigert@nettilinja.fi>
 Source0:	ftp://ftp.gimp.org/pub/gimp/contrib/pats-tigert-pov-granites.tar.gz
+# Source0-md5:	5da8dfad505f3087f8de6521d76ee257
 Source1:	ftp://ftp.gimp.org/pub/gimp/contrib/pats-tigert-pov-stones.tar.gz
+# Source1-md5:	52fa33b8c881ff61f1f4e8fe640e8ca1
 Source2:	ftp://ftp.gimp.org/pub/gimp/contrib/pats-tigert-pov.README
+# Source2-md5:	f7fb7d743a8ba221412feede8c50b5f1
 BuildRequires:	gimp-devel >= 1.2
 Requires:	gimp >= 1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
