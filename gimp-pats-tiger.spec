@@ -1,7 +1,7 @@
 Summary:   The GNU Image Manipulation Program
 Name:      gimp-pats-tiger
 Version:   1.0
-Release:   1
+Release:   2
 Copyright: GPL
 Group:     X11/Applications/Graphics
 Source0:   ftp://ftp.gimp.org/pub/gimp/0.99/contrib/pats-tigert-pov-granites.tar.gz
@@ -29,8 +29,8 @@ install %{SOURCE2} .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/share/gimp/patterns
-install *pat $RPM_BUILD_ROOT/usr/share/gimp/patterns
+install -d $RPM_BUILD_ROOT/usr/X11R6/share/gimp/patterns
+install *pat $RPM_BUILD_ROOT/usr/X11R6/share/gimp/patterns
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -38,10 +38,15 @@ rm -rf $RPM_BUILD_ROOT
 %files 
 %defattr(644, root, root)
 %doc pats-tigert-pov.README
-/usr/share/gimp/patterns/*
+/usr/X11R6/share/gimp/patterns/*
 
 %changelog
+* Thu Sep 24  1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
+  [1.0-2]
+- changed install prefix to /usr/X11R6.
+
 * Fri May  1 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
+  [1.0-1]
 - first release in rpm package,
 - spec contain %%{SOURCE2} and %defattr macros (this require using on
   rebuild rpm >= 2.4.99.
