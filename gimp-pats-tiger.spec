@@ -2,7 +2,7 @@ Summary:	The GNU Image Manipulation Program
 Summary(pl):	GNU Gimp program do tworzenia i obróki grafiki 
 Name:		gimp-pats-tiger
 Version:	1.0
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications/Graphics
 Group(pl):	X11/Aplikacje/Grafika
@@ -10,12 +10,14 @@ Vendor:		Tuomas Kuosmanen <tigert@nettilinja.fi>
 Source0:	ftp://ftp.gimp.org/pub/gimp/contrib/pats-tigert-pov-granites.tar.gz
 Source1:	ftp://ftp.gimp.org/pub/gimp/contrib/pats-tigert-pov-stones.tar.gz
 Source2:	ftp://ftp.gimp.org/pub/gimp/contrib/pats-tigert-pov.README
-Requires:	gimp
+BuildRequires:	gimp-devel >= 1.2
+Requires:	gimp >= 1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Buildarch:	noarch
 
 %define		_prefix		/usr/X11R6
 %define		_mandir		%{_prefix}/man
+%define		_gimpdatadir	%(gimp-config --gimpdatadir)
 
 %description
 Gimp patterns converted from the raytracing program Persistence of
@@ -43,8 +45,9 @@ install %{SOURCE2} .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_datadir}/gimp/patterns
-install *pat $RPM_BUILD_ROOT%{_datadir}/gimp/patterns
+%{__install} -d $RPM_BUILD_ROOT%{_gimpdatadir}/patterns
+
+install *pat $RPM_BUILD_ROOT%{_gimpdatadir}/patterns
 
 gzip -9nf pats-tigert-pov.README
 
@@ -54,4 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %files 
 %defattr(644,root,root,755)
 %doc *gz
-%{_datadir}/gimp/patterns/*
+%{_gimpdatadir}/patterns/*
