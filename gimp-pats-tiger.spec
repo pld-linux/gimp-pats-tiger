@@ -1,5 +1,5 @@
 Summary:	The GNU Image Manipulation Program
-Summary(pl):	GNU Gimp program do tworzenia i obróki grafiki
+Summary(pl.UTF-8):   GNU Gimp program do tworzenia i obrÃ³ki grafiki
 Name:		gimp-pats-tiger
 Version:	1.0
 Release:	5
@@ -29,13 +29,13 @@ T_Stone1-24 and T_Grnt1-29.
 The patterns are meant to be used with GIMP, and are therefore
 released under GPL - see www.gnu.org for more details.
 
-%description -l pl
-Wzorce Gimpa przekonwertowne z programu ¶ledz±cego promienie
+%description -l pl.UTF-8
+Wzorce Gimpa przekonwertowne z programu Å›ledzÄ…cego promienie
 Persistence of Vision (PoVRay, zob. http://www.povray.org). Pakiet
 zawiera wzorce Gimpa ze standardowych tekstur PoVRay'a: T_Stone1-24
-oraz T_Grnt1-29. Wzorce s± przeznaczone dla Gimpa i dlatego s±
-udostêpnione na licencji GPL; Wiêcej szczegó³ów na temat GPL mo¿na
-znale¼æ na stronach www.gnu.org.
+oraz T_Grnt1-29. Wzorce sÄ… przeznaczone dla Gimpa i dlatego sÄ…
+udostÄ™pnione na licencji GPL; WiÄ™cej szczegÃ³Å‚Ã³w na temat GPL moÅ¼na
+znaleÅºÄ‡ na stronach www.gnu.org.
 
 %prep
 %setup -q -c 0 -a 1
